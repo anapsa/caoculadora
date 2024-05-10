@@ -11,20 +11,22 @@ struct ContentView: View {
     @State var years: Int? = nil
     @State var months: Int? = nil
     @State var result: Int? = nil
-    @State var porte: String = "pequeno"
-    let portes = ["pequeno", "médio", "grande"]
+    @State var porteSelecionado: porte = .pequeno
     var body: some View {
         VStack (alignment: .leading){
-       
             Text("Qual a idade do seu cão?")
+                .font(.header5)
             Text("Anos")
+                .font(.body1)
             TextField("Digite a idade do seu cão tem", value: $years, format: .number)
             Text("Meses")
+                .font(.body1)
             TextField("Digite quantos meses seu cão tem", value: $months, format: .number)
             Text("Porte")
-            Picker("Porte", selection: $porte){
-                ForEach(portes, id: \.self) { porte in
-                    Text(porte)
+                .font(.body1)
+            Picker("Porte", selection: $porteSelecionado){
+                ForEach(porte.allCases, id: \.self) { porte in
+                    Text(porte.rawValue)
                         .tag(porte)
                 }
             }
@@ -33,8 +35,9 @@ struct ContentView: View {
             Spacer()
             if let result {
                 Text("A idade do seu cachorro em anos humanos é")
+                    .font(.body1)
                 Text("\(result) anos")
-              
+                    .font(.display)
             } else {
                 Image(ImageResource.image)
                     .resizable()
@@ -50,7 +53,7 @@ struct ContentView: View {
                         Color.yellow
                         Text("Cãocular")
                             .foregroundStyle(.white)
-                    
+                            .font(.body1)
                     }
                     .cornerRadius(10)
                 }
@@ -65,13 +68,17 @@ struct ContentView: View {
 
     }
     func processYears(){
-        guard 
+        
+        guard
             let years, let months
         else {
             print("preencha o campo de entrada")
             return
         }
-        result = years*7 + (months*7/12)
+        result = porteSelecionado.conversaoIdade(
+            anos: years,
+            meses: months
+        )
     }
 }
 

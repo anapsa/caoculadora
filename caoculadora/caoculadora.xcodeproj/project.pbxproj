@@ -11,6 +11,8 @@
 		DD90BB292BEAB1CD00094E2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90BB282BEAB1CD00094E2B /* ContentView.swift */; };
 		DD90BB2B2BEAB1CE00094E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD90BB2A2BEAB1CE00094E2B /* Assets.xcassets */; };
 		DD90BB2E2BEAB1CE00094E2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD90BB2D2BEAB1CE00094E2B /* Preview Assets.xcassets */; };
+		DD90BB622BEE9D6C00094E2B /* porte.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90BB612BEE9D6C00094E2B /* porte.swift */; };
+		DD90BB642BEEAFE200094E2B /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90BB632BEEAFE200094E2B /* StyleGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DD90BB282BEAB1CD00094E2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD90BB2A2BEAB1CE00094E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD90BB2D2BEAB1CE00094E2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD90BB612BEE9D6C00094E2B /* porte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = porte.swift; sourceTree = "<group>"; };
+		DD90BB632BEEAFE200094E2B /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				DD90BB262BEAB1CD00094E2B /* caoculadoraApp.swift */,
 				DD90BB282BEAB1CD00094E2B /* ContentView.swift */,
+				DD90BB612BEE9D6C00094E2B /* porte.swift */,
+				DD90BB632BEEAFE200094E2B /* StyleGuide.swift */,
 				DD90BB2A2BEAB1CE00094E2B /* Assets.xcassets */,
 				DD90BB2C2BEAB1CE00094E2B /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				DD90BB292BEAB1CD00094E2B /* ContentView.swift in Sources */,
 				DD90BB272BEAB1CD00094E2B /* caoculadoraApp.swift in Sources */,
+				DD90BB642BEEAFE200094E2B /* StyleGuide.swift in Sources */,
+				DD90BB622BEE9D6C00094E2B /* porte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
